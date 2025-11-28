@@ -190,7 +190,7 @@ try {
 # The Fortress remains awake for a fixed duration.
 # Temporal stability maintained through randomized pulse cycles.
 # ============================================================
-$totalMinutes = 15000
+$totalMinutes = 2000
 $startTime    = Get-Date
 $endTime      = $startTime.AddMinutes($totalMinutes)
 
@@ -222,4 +222,5 @@ if ($RUNNER_ENV -eq "self-hosted") {
     Log "Decommission - Hosted environment detected. Exiting gracefully."
     Exit
 }
+
 
